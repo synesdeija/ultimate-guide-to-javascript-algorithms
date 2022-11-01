@@ -23,7 +23,7 @@ function maxRecurringChar(text) {
 function maxRecurringChar(text) {
     let charMap = {}
     let charArray =[]
-    let vaulesArray = []
+    let valuesArray = []
     let maxCharValue = 0
 
     for (let char of text) {
@@ -34,8 +34,8 @@ function maxRecurringChar(text) {
         }
     }
     charArray = Object.keys(charMap)
-    vaulesArray = Object.values(charMap)
-    maxCharValue = Math.max(...vaulesArray)
+    valuesArray = Object.values(charMap)
+    maxCharValue = Math.max(...valuesArray)
     
-    return charArray[vaulesArray.indexOf(maxCharValue)]
+    return charArray[valuesArray.indexOf(maxCharValue)]
 }
